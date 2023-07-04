@@ -60,7 +60,7 @@ class MainApp(QMainWindow):
                                           QMessageBox.Yes | QMessageBox.No)
             if warning == QMessageBox.Yes:
                 if len(national_id) == 14 and len(name) >= 2 and len(ray_path) >= 4:
-                    state = get_result(ray_path, "model.h5")
+                    state = get_result(ray_path, "model_pre36_re30.h5")
                     if not state:
                         patient_state = "Positive"
                     else:
